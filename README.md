@@ -1,5 +1,4 @@
 # My Portfolio
-# SusieYonng's Portfolio
 
 ## ⚠️ Usage Policy  
 **Code**: MIT Licensed (free for reuse with attribution)  

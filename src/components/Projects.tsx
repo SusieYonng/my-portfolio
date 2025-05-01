@@ -48,6 +48,7 @@ const Projects = () => {
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
+                boxShadow: "0px 1px 4px rgba(0,0,0,0.1)",
               }}
             >
               <CardMedia

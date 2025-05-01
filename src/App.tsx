@@ -50,7 +50,12 @@ const App = () => {
   return (
     <>
       <AppBar position="sticky">
-        <Toolbar>
+        <Toolbar
+          sx={{
+            background:
+              "linear-gradient(90deg, #4B0082 0%, #8A2BE2 50%, #1E90FF 100%)",
+          }}
+        >
           <Stack
             direction="row"
             spacing={1}

@@ -30,8 +30,9 @@ const Experience = () => {
           expanded={expandedIndex === index}
           onChange={() => handleChange(index)}
           sx={{
+            boxShadow: "0px 1px 4px rgba(0,0,0,0.1)",
             "&:hover": {
-              backgroundColor: "rgba(0, 0, 0, 0.03)",
+              background: "linear-gradient(180deg, #fafaff 0%, #f0f4ff 100%)",
             },
           }}
         >

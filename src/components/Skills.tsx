@@ -55,33 +55,34 @@ export default function Skills() {
         spacing={3}
         justifyContent="center"
         sx={{
-          backgroundColor: "#f5f5f5",
+          background: "linear-gradient(180deg, #fafaff 0%, #f0f4ff 100%)",
           borderRadius: 2,
           width: "100%",
           mx: 0,
           my: 2,
           pb: 2,
+          boxShadow: "0px 2px 8px rgba(0,0,0,0.08)",
         }}
       >
         {skills.map((skill, index) => (
           <Grid item xs={4} sm={3} md={2} key={index} textAlign="center">
-        <Box
-          sx={{
-            padding: 2,
-            "&:hover": {
-          transform: "scale(1.1)",
-          transition: "all 0.3s ease",
-            },
-          }}
-        >
-          {skill.icon}
-          <Typography
-            variant="body1"
-            sx={{ marginTop: 1, fontWeight: "medium" }}
-          >
-            {skill.name}
-          </Typography>
-        </Box>
+            <Box
+              sx={{
+                padding: 2,
+                "&:hover": {
+                  transform: "scale(1.1)",
+                  transition: "all 0.3s ease",
+                },
+              }}
+            >
+              {skill.icon}
+              <Typography
+                variant="body1"
+                sx={{ marginTop: 1, fontWeight: "medium" }}
+              >
+                {skill.name}
+              </Typography>
+            </Box>
           </Grid>
         ))}
       </Grid>

@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "gh-pages -d dist -b gh-pages -r git@github.com:SusieYonng/my-portfolio.git --no-history"
+    "deploy": "./deploy.sh"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
