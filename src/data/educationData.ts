@@ -34,14 +34,14 @@ export const education = [
   },
   {
     school: "Wuhan University of Technology",
-    degree: "B.S. in Electronic Information Engineering",
+    degree: "B.S. in Electrical Engineering (Electronics & Communications)",
     duration: "Sep 2013 – Jun 2017",
     gpa: "3.79 / 4.0",
     coursework: [
       'Fundamentals of Computer Programming (C Language)',
       'Data Structures & Algorithms',
-      'VC Programming Design',
       'Database & Information Systems',
+      'Computer Network & Communication'
     ],
     honors: [
       "Awarded as an outstanding graduate of Wuhan University of Technology in 2017",

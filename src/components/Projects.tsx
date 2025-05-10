@@ -139,48 +139,48 @@ const Projects = () => {
             }
             sx={{ width: "100%" }}
           >
-            {activeProject?.assets?.map((asset: any, i: number) => (
-              <Grid
-                item
-                xs={12}
-                sm={asset.orientation === "landscape" ? 12 : 6}
-                md={asset.orientation === "landscape" ? 12 : 4}
-                key={i}
-              >
-                {asset.type === "image" ? (
-                  <Box
-                    component="img"
-                    src={asset.src}
-                    alt={`Project Image ${i}`}
-                    sx={{
-                      width: "100%",
-                      height: "auto",
-                      maxHeight: 400,
-                      objectFit: "contain",
-                      display: "block",
-                      borderRadius: 2,
-                    }}
-                  />
-                ) : asset.type === "video" ? (
-                  <Box
-                    component="video"
-                    src={asset.src}
-                    controls
-                    sx={{
-                      width:
-                        asset.orientation === "landscape" ? "100%" : "auto",
-                      // height: 'auto',
-                      minHeight: 120,
-                      maxHeight: 400,
-                      objectFit: "contain",
-                      display: "block",
-                      mx: "auto",
-                      borderRadius: 2,
-                    }}
-                  />
-                ) : null}
-              </Grid>
-            ))}
+            {activeProject?.assets?.map((asset: any, i: number) => {
+              const perRow =
+                activeProject?.assetsPerRow ||
+                (asset.orientation === "landscape" ? 1 : 3);
+
+              return (
+                <Grid item xs={12} sm={12 / perRow} md={12 / perRow} key={i}>
+                  {asset.type === "image" ? (
+                    <Box
+                      component="img"
+                      src={asset.src}
+                      alt={`Project Image ${i}`}
+                      sx={{
+                        width: "100%",
+                        height: "auto",
+                        maxHeight: 400,
+                        objectFit: "contain",
+                        display: "block",
+                        borderRadius: 2,
+                      }}
+                    />
+                  ) : asset.type === "video" ? (
+                    <Box
+                      component="video"
+                      src={asset.src}
+                      controls
+                      sx={{
+                        width:
+                          asset.orientation === "landscape" ? "100%" : "auto",
+                        // height: 'auto',
+                        minHeight: 120,
+                        maxHeight: 400,
+                        objectFit: "contain",
+                        display: "block",
+                        mx: "auto",
+                        borderRadius: 2,
+                      }}
+                    />
+                  ) : null}
+                </Grid>
+              );
+            })}
           </Grid>
         </DialogContent>
       </Dialog>
