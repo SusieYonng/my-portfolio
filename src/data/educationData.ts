@@ -1,23 +1,36 @@
 // src/data/educationData.ts
 
-export const education = [
+interface EducationItem {
+  school: string;
+  degree: string;
+  degreeNote?: string;
+  duration: string;
+  gpa?: string;
+  coursework?: string[];
+  publications?: string[];
+  honors?: string[];
+}
+
+export const education: EducationItem[] = [
   {
     school: "Northeastern University",
     degree: "M.S. in Information Systems",
+    degreeNote: "(Concentration in Software Engineering with emphasis on Full-Stack Development)",
     duration: "Sep 2024 – Present",
     gpa: "4.0 / 4.0",
     coursework: [
-      'INFO 5100 Application Engineering and Development',
-      'INFO 6105 Data Science Engineering Methods and Tools',
-      'INFO 6205 Program Structures and Algorithms',
-      'INFO 6250 Web Development Tools & Methods',
-      'DAMG 6210 Data Management and Database Design',
-      'INFO 7610 Natural Language Engineering Methods/Tools'
+      'Application Engineering and Development',
+      'Data Science Engineering Methods and Tools',
+      'Program Structures and Algorithms',
+      'Web Development Tools & Methods',
+      'Data Management and Database Design (In Progress)',
+      'Natural Language Engineering Methods/Tools (In Progress)'
     ]
   },
   {
     school: "Huazhong University of Science and Technology",
     degree: "M.S. in Information and Communication Engineering",
+    degreeNote: "(Equivalent to a focus in Electrical Engineering with a specialization in Telecommunications & Signal Processing)",
     duration: "Sep 2017 – Aug 2020",
     gpa: "3.36 / 4.0",
     coursework: [
@@ -36,11 +49,14 @@ export const education = [
   },
   {
     school: "Wuhan University of Technology",
-    degree: "B.S. in Electrical Engineering (Electronics & Communications)",
+    degree: "B.S. in Electronic Information Engineering",
+    degreeNote: "(Aligns with U.S. Electrical Engineering curriculum, specializing in Electronics & Communications)",
     duration: "Sep 2013 – Jun 2017",
     gpa: "3.79 / 4.0",
     coursework: [
+      'Computer Systems Fundamentals & Operating Systems Concepts',
       'Fundamentals of Computer Programming (C Language)',
+      'Principles of Microcomputers & Communication Interfaces',
       'Data Structures & Algorithms',
       'Database & Information Systems',
       'Computer Network & Communication'

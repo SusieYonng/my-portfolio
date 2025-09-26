@@ -42,6 +42,11 @@ const Education = () => {
               <Typography variant="body2" color="text.secondary">
                 {edu.degree} ・ {edu.duration}
               </Typography>
+              {edu.degreeNote && (
+                <Typography variant="body2" color="text.secondary" sx={{ fontStyle: 'italic', mt: 0.5 }}>
+                  {edu.degreeNote}
+                </Typography>
+              )}
             </Box>
           </AccordionSummary>
 
