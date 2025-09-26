@@ -4,13 +4,15 @@ export const education = [
   {
     school: "Northeastern University",
     degree: "M.S. in Information Systems",
-    duration: "Sep 2024 – Apr 2026 (expected)",
+    duration: "Sep 2024 – Present",
     gpa: "4.0 / 4.0",
     coursework: [
       'INFO 5100 Application Engineering and Development',
       'INFO 6105 Data Science Engineering Methods and Tools',
       'INFO 6205 Program Structures and Algorithms',
       'INFO 6250 Web Development Tools & Methods',
+      'DAMG 6210 Data Management and Database Design',
+      'INFO 7610 Natural Language Engineering Methods/Tools'
     ]
   },
   {
