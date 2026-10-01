@@ -16,15 +16,17 @@ export const education: EducationItem[] = [
     school: "Northeastern University",
     degree: "M.S. in Information Systems",
     degreeNote: "(Concentration in Software Engineering with emphasis on Full-Stack Development)",
-    duration: "Sep 2024 – Present",
+    duration: "Sep 2024 – Dec 2026",
     gpa: "4.0 / 4.0",
     coursework: [
       'Application Engineering and Development',
       'Data Science Engineering Methods and Tools',
       'Program Structures and Algorithms',
       'Web Development Tools & Methods',
-      'Data Management and Database Design (In Progress)',
-      'Natural Language Engineering Methods/Tools (In Progress)'
+      'Data Management and Database Design',
+      'Natural Language Engineering Methods/Tools',
+      'Network Structures & Cloud Computing (In Progress)',
+      'Data Engineering for AI (In Progress)'
     ]
   },
   {
