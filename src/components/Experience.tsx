@@ -46,6 +46,7 @@ const Experience = () => {
           </AccordionSummary>
 
           <AccordionDetails>
+            {exp.summary && <Typography> {exp.summary} </Typography>}
             <List dense disablePadding>
               {exp.responsibilities.map((item, i) => (
                 <ListItem key={i} sx={{ pl: 2 }}>
@@ -56,7 +57,7 @@ const Experience = () => {
                           component="span"
                           sx={{ fontWeight: 600, display: "inline" }}
                         >
-                          {item.title}{" "}
+                          {item.title}{": "}
                         </Typography>
                         <Typography component="span" sx={{ display: "inline" }}>
                           {item.detail}

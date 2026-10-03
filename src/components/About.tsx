@@ -7,27 +7,30 @@ const About = () => (
       About Me
     </Typography>
     <Typography paragraph>
-      <strong>Hi, I'm Sisi Tian.</strong> I’m a passionate software development
-      enthusiast with 4 years of work experience and currently pursuing my
-      second master’s degree at Northeastern University (Seattle). My journey in
-      tech has been driven by curiosity and a love for building user-centric
-      applications that merge innovation with functionality.
+      Hi, I'm Sisi Tian. I’m a <strong>Software Engineer with 4+ years of professional
+      experience</strong>, currently completing my Master’s degree at Northeastern
+      University (Seattle) and <strong>set to graduate in December 2026</strong>
+      .
     </Typography>
     <Typography paragraph>
-      Over the years, I’ve honed my expertise in front-end development, crafting
-      dynamic web applications that deliver seamless user experiences. Now, I’m
-      advancing my software development skills—deepening my knowledge of backend
-      technologies, refining my front-end proficiency, and exploring data
-      science to broaden my perspective as I work toward becoming a well-rounded
-      full-stack engineer.
+      Building upon a strong foundation in{" "}
+      <strong>front-end engineering</strong> and web applications, I have
+      expanded my technical horizon toward <strong>backend </strong> and{" "}
+      <strong>data-intensive engineering</strong>. Through my recent co-op
+      experience, I deepened my hands-on backend expertise by building
+      event-driven microservices, asynchronous data streaming pipelines, and
+      scalable cloud solutions—leveraging{" "}
+      <strong>AI-assisted coding workflows</strong> to boost engineering speed
+      and code quality.
     </Typography>
     <Typography paragraph>
-      In the future, I envision contributing to projects that leverage
-      cutting-edge technology to make a tangible impact, whether through
-      building scalable systems, optimizing performance, or uncovering insights
-      through data. For me, software development is more than just code—it's a
-      way to connect ideas, people, and possibilities.
-    </Typography> 
+      Today, my primary career focus is as a{" "}
+      <strong>
+        Full-Stack Engineer with a strong inclination toward backend engineering
+      </strong>
+      . I enjoy connecting seamless frontend interfaces with performant,
+      data-driven backend systems to deliver impactful end-to-end applications.
+    </Typography>
   </Box>
 );
 
